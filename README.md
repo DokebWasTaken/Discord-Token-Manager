@@ -1,12 +1,10 @@
 # Discord Token Manager
 ![image](https://github.com/user-attachments/assets/479557e5-4968-42c6-9933-15569b19fbd1)
 
-
-https://github.com/user-attachments/assets/1b6c723b-7022-4446-9514-0d79d24682ac
-
-
 A discord Token manager tool and token validator
 
+Tutorial:
+https://streamable.com/vpue0e
 ## Features
 - Load, save, and manage Discord tokens.
 - Check token validity, phone number, and Nitro status.
