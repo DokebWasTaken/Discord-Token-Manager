@@ -47,3 +47,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 Made by Dokeb
 - Telegram: DokebWasTaken
 
+- Tags (ignore):
+Discord, Discord multitool, discord bot, discord token, discord token manager, discord raider, discord raider bot, discord multi tool, discord tool, discord tools, discord token generator, discord dark tools, discord stealer, discord rat, discord account manager, discord account manager tool, discord, discord-bot, discord-token, token-manager, python, automation, api, security, discord-api, developer-tools, open-source, cli, self-hosted, discord-py, authentication
